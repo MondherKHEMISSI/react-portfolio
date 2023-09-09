@@ -22,7 +22,6 @@ const Skills = () => {
   }, [])
 
   useEffect(() => {
-    return () => {
       const container = ".tagcloud";
       const texts = [
         "HTML",
@@ -48,7 +47,6 @@ const Skills = () => {
       };
 
       TagCloud(container, texts, options);
-    };
   }, []);
 
 
