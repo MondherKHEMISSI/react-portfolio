@@ -1,6 +1,53 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import {
+  faCss3,
+  faGitAlt,
+  faJava,
+  faLinux,
+  faPython,
+  faReact
+} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import './index.scss'
+
+
+const Logo = () => {
+  return (
+      <div className="logo-container">
+        <div className="stage-cube-cont">
+          <div className="cubespinner">
+            <div className="face1">
+              <FontAwesomeIcon icon={faPython} color="#FFD43B" />
+            </div>
+            <div className="face2">
+              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+            </div>
+            <div className="face3">
+              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+            </div>
+            <div className="face4">
+              <FontAwesomeIcon icon={faJava} color="red" />
+            </div>
+            <div className="face5">
+              <FontAwesomeIcon icon={faLinux} color="black" />
+            </div>
+            <div className="face6">
+              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  )
+}
+
+export default Logo; 
+
+/*
 import { useEffect, useRef } from 'react'
-/*import gsap from 'gsap-trial'
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'*/
+import { gsap } from 'gsap'
+import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
 import LogoS from '../../../assets/images/mLetter.png'
 import './index.scss'
 
@@ -8,7 +55,7 @@ const Logo = () => {
   const bgRef = useRef()
   const outlineLogoRef = useRef()
   const solidLogoRef = useRef()
-/*
+
   useEffect(() => {
     gsap.registerPlugin(DrawSVGPlugin)
 
@@ -35,7 +82,7 @@ const Logo = () => {
       }
     )
   }, [])
-*/
+
   return (
     <div className="logo-container" ref={bgRef}>
       <img
@@ -68,3 +115,4 @@ const Logo = () => {
 }
 
 export default Logo
+*/

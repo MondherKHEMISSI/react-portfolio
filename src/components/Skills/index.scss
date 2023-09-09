@@ -1,0 +1,36 @@
+.text-shpere {
+    position: absolute;
+	width: 80%;
+	right: -15%;
+	left: auto;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.tagcloud {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    font-size: 1.3em;
+}
+
+/* Change color of each text in sphere on hover   */
+.tagcloud--item {
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.tagcloud--item:hover {
+    color: #ffd700;
+}
+

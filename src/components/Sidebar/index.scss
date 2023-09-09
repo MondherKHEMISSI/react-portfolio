@@ -86,6 +86,12 @@
       }
     }
 
+    a.skills-link {
+      &:after {
+        content: 'SKILLS';
+      }
+    }
+
     a.contact-link {
       &:after {
         content: 'CONTACT';
@@ -94,7 +100,7 @@
 
     a.portfolio-link {
       &:after {
-        content: 'PORTFOLIO';
+        content: 'PROJECTS';
       }
     }
 

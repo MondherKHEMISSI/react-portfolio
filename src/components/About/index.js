@@ -1,79 +1,84 @@
-import { useEffect, useState } from 'react'
+import React from "react";
 import {
-  faCss3,
-  faGitAlt,
-  faJava,
-  faLinux,
-  faPython,
-  faReact
-} from '@fortawesome/free-brands-svg-icons'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import Loader from "react-loaders";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGraduationCap, faSchool } from "@fortawesome/free-solid-svg-icons";
 import './index.scss'
 
 const About = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
-
   return (
     <>
-      <div className="container about-page">
-        <div className="text-zone">
-          <h1>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-              idx={15}
-            />
-          </h1>
-          <p>
-            I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
-          </p>
-          <p align="LEFT">
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
-          </p>
-          <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
-          </p>
-        </div>
+      <div className="experience">
+        <VerticalTimeline lineColor="#ffd700">
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2010 - 2014"
+            dateClassName="first"
+            iconStyle={{ background: "#022c43", color: "#ffd700" }}
+            icon={<FontAwesomeIcon icon={faGraduationCap} color="#FFD700" />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              My Random High School, Random Place, Random State
+            </h3>
+            <p> High School Diploma</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2014 - 2018"
+            iconStyle={{ background: "#3e497a", color: "#fff" }}
+            icon={<FontAwesomeIcon icon={faSchool} color="#FFD43B" />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              My Cool University, Vancouver, British Columbia
+            </h3>
 
-        <div className="stage-cube-cont">
-          <div className="cubespinner">
-            <div className="face1">
-              <FontAwesomeIcon icon={faPython} color="#DD0031" />
-            </div>
-            <div className="face2">
-              <FontAwesomeIcon icon={faReact} color="#F06529" />
-            </div>
-            <div className="face3">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-            </div>
-            <div className="face4">
-              <FontAwesomeIcon icon={faJava} color="#5ED4F4" />
-            </div>
-            <div className="face5">
-              <FontAwesomeIcon icon={faLinux} color="#EFD81D" />
-            </div>
-            <div className="face6">
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
-            </div>
-          </div>
-        </div>
+            <h4 className="vertical-timeline-element-subtitle">
+              Bachelor's Degree
+            </h4>
+
+            <p> Computer Science</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2018 - 2020"
+            iconStyle={{ background: "#e9d35b", color: "#fff" }}
+            icon={<FontAwesomeIcon icon={faSchool} color="#FFD43B" />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Back End Engineer - Google
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              San Francisco, CA
+            </h4>
+            <p>Developed the backend infrastructure for 3 projects.</p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2020 - present"
+            iconStyle={{ background: "#e9d35b", color: "#fff" }}
+            icon={<FontAwesomeIcon icon={faSchool} color="#FFD43B" />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Full Stack Engineer - Twitch
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              San Francisco, CA
+            </h4>
+            <p>
+              Helped the team launch 2 major features by working both in the front
+              end and back end.
+            </p>
+          </VerticalTimelineElement>
+        </VerticalTimeline>
       </div>
       <Loader type="pacman" />
     </>
-  )
+  )  
 }
 
 export default About

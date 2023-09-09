@@ -11,17 +11,21 @@ const Home = () => {
 
   const nameArray = ['o', 'n', 'd', 'h', 'e', 'r']
   const jobArray = [
-    'w',
-    'e',
-    'b',
-    ' ',
-    'd',
-    'e',
-    'v',
-    'e',
-    'l',
+    's',
     'o',
-    'p',
+    'f',
+    't',
+    'w',
+    'a',
+    'r',
+    'e',
+    ' ',
+    'e',
+    'n',
+    'g',
+    'i',
+    'n',
+    'e',
     'e',
     'r',
     '.',
@@ -59,7 +63,7 @@ const Home = () => {
               idx={22}
             />
           </h1>
-          <h2>Front End Developer / JavaScript Expert / Youtuber</h2>
+          <h2>Full-Satck Developer / Real-Time Embedded Software Engineer / RAMS Engineer</h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
