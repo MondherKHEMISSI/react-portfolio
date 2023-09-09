@@ -1,12 +1,4 @@
 import { useEffect, useState } from 'react'
-import {
-  faCss3,
-  faGitAlt,
-  faJava,
-  faLinux,
-  faPython,
-  faReact
-} from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import TagCloud from "TagCloud";
@@ -23,6 +15,7 @@ const Skills = () => {
 
   useEffect(() => {
       const container = ".tagcloud";
+      let radii;
       const texts = [
         "HTML",
         "CSS",
@@ -39,8 +32,17 @@ const Skills = () => {
         "GITHUB",
       ];
 
+      const radiusValue = () => {
+        if (window.screen.width <= 778) {
+          radii = 150;
+        } else {
+          radii = 300;
+        }
+        return radii;
+      }
+
       const options = {
-        radius: 300,
+        radius: radiusValue(),
         maxSpeed: "fast",
         initSpeed: "fast",
         keep: true,
