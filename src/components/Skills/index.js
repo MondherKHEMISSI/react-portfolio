@@ -45,7 +45,7 @@ const Skills = () => {
 
       const radiusValue = () => {
         if (window.screen.width <= 778) {
-          radii = 150;
+          radii = 200;
         } else {
           radii = 300;
         }
