@@ -30,6 +30,17 @@ const Skills = () => {
         "Firebase",
         "GIT",
         "GITHUB",
+        "Embedded C",
+        "C++",
+        "UML",
+        "SysML",
+        "VHDL",
+        "Docker",
+        "MATLAB",
+        "ROS",
+        "JENKINS",
+        "SQL",
+        "TAILWIND"
       ];
 
       const radiusValue = () => {
@@ -59,7 +70,7 @@ const Skills = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['S', 'k', 'i', 'l', 'l', 's']}
+              strArray={"Skills".split("")}
               idx={15}
             />
           </h1>

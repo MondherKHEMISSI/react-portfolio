@@ -9,28 +9,6 @@ import './index.scss'
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = ['o', 'n', 'd', 'h', 'e', 'r']
-  const jobArray = [
-    's',
-    'o',
-    'f',
-    't',
-    'w',
-    'a',
-    'r',
-    'e',
-    ' ',
-    'e',
-    'n',
-    'g',
-    'i',
-    'n',
-    'e',
-    'e',
-    'r',
-    '.',
-  ]
-
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
@@ -53,20 +31,25 @@ const Home = () => {
             />
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={nameArray}
+              strArray={'ondher'.split("")}
               idx={15}
             />
             <br />
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={jobArray}
-              idx={22}
+              strArray={"software engineer.".split("")}
+              idx={18}
             />
           </h1>
           <h2>Full-Satck Developer / Real-Time Embedded Software Engineer / RAMS Engineer</h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
+          <a
+              className="flat-button"
+              target="_blank"
+              href="https://mondherkhemissi.github.io/react-portfolio/src/assets/CV-KHEMISSI.pdf"
+              >DOWNLOAD CV</a>
         </div>
         <Logo />
       </div>
