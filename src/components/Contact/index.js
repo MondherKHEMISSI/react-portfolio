@@ -44,8 +44,9 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially on ambitious
-            or large projects. However, if you have any other requests or
+            I am seeking an internship opportunity for my year-end project with 
+            the potential for a long-term employment opportunity. 
+            However, if you have any other requests or
             questions, don't hesitate to contact me using below form either.
           </p>
           <div className="contact-form">
@@ -89,9 +90,10 @@ const Contact = () => {
           <br />
           France,
           <br />
-          31 rue Jacqueline Auriol, 31400 <br />
+          31 rue Jacqueline Auriol, 31400, <br />
           Toulouse <br />
           <br />
+          <span>+33 7 52 05 15 38</span><br/>
           <span>monder850@gmail.com</span>
         </div>
         <div className="map-wrap">

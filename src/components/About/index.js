@@ -24,7 +24,7 @@ const About = () => {
             icon={<FontAwesomeIcon icon={faGraduationCap} color="#FFD700" />}
           >
             <h3 className="vertical-timeline-element-title">
-              Master II ISTR | Université de Toulouse III - Paul Sabatier
+            Master II ISTR | University of Toulouse III - Paul Sabatier
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
               Toulouse, France
@@ -38,10 +38,10 @@ const About = () => {
             icon={ < MdWork  color="#FFD700" />}
           >
             <h3 className="vertical-timeline-element-title">
-            Stage Pratique | SIDER (Complexe sidérurgique d’El Hadjar)
+            Internship | SIDER (El Hadjar Steel Complex)
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Automaticien
+              Automation engineer
             </h4>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -52,10 +52,10 @@ const About = () => {
             icon={<FontAwesomeIcon icon={faGraduationCap} color="#FFD700" />}
           >
             <h3 className="vertical-timeline-element-title">
-              Master II Commande électrique |  Université Badji Mokthar-Annaba
+              Master II Electrical Control |  Badji Mokthar-Annaba University
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Diplome Master II
+              Master’s degree
             </h4>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -66,10 +66,10 @@ const About = () => {
             icon={< MdWork color="#FFD700" />}
           >
             <h3 className="vertical-timeline-element-title">
-            Stage découverte | SEAAL
+              Internship | SEAAL
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Electrotechnicien
+              Electrotechnician
             </h4>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -80,10 +80,10 @@ const About = () => {
             icon={<FontAwesomeIcon icon={faGraduationCap} color="#FFD700" />}
           >
             <h3 className="vertical-timeline-element-title">
-            Licence LMD spécialité électrotechnique | Université Badji Mokthar-Annaba
+              Bachelor’s in Electrical Engineering | Badji Mokthar-Annaba University
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Diplome Licence
+              Bachelor's degree
             </h4>
           </VerticalTimelineElement>
 
@@ -95,15 +95,14 @@ const About = () => {
             icon={<FontAwesomeIcon icon={faGraduationCap} color="#FFD700" />}
           >
             <h3 className="vertical-timeline-element-title">
-              BAC Scientifique | Lycée colonel Amara el Askri
+              Baccalaureate | High school colonel Amara el Askri
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-            Diplome Baccalauréat
+              Baccalaureate diploma
             </h4>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
-      <Loader type="pacman" />
     </>
   )  
 }
