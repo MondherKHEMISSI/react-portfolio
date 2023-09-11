@@ -5,6 +5,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import LogoTitle from '../../assets/images/mLetter.png'
 import Logo from './Logo'
 import './index.scss'
+import CV from '../../assets/CV-KHEMISSI.pdf'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -48,8 +49,9 @@ const Home = () => {
           <a
               className="flat-button"
               target="_blank"
-              href="https://mondherkhemissi.github.io/react-portfolio/src/assets/CV-KHEMISSI.pdf"
-              >DOWNLOAD CV</a>
+              href={CV}
+              >DOWNLOAD CV
+          </a>
         </div>
         <Logo />
       </div>
