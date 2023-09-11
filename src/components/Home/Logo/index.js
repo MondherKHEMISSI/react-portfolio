@@ -16,6 +16,9 @@ const Logo = () => {
   return (
       <div className="logo-container">
         <div className="stage-cube-cont">
+          <div className="stars"></div>
+          <div className="stars2"></div>
+          <div className="stars3"></div>
           <div className="cubespinner">
             <div className="face1">
               <FontAwesomeIcon icon={faPython} color="#FFD43B" />

@@ -8,6 +8,8 @@ import Loader from "react-loaders";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGraduationCap, faSchool } from "@fortawesome/free-solid-svg-icons";
 import './index.scss'
+import { MdWork } from "react-icons/md";
+
 
 const About = () => {
   return (
@@ -16,63 +18,88 @@ const About = () => {
         <VerticalTimeline lineColor="#ffd700">
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="2010 - 2014"
+            date="2021 - 2024"
             dateClassName="first"
             iconStyle={{ background: "#022c43", color: "#ffd700" }}
             icon={<FontAwesomeIcon icon={faGraduationCap} color="#FFD700" />}
           >
             <h3 className="vertical-timeline-element-title">
-              My Random High School, Random Place, Random State
+              Master II ISTR | Université de Toulouse III - Paul Sabatier
             </h3>
-            <p> High School Diploma</p>
+            <h4 className="vertical-timeline-element-subtitle">
+              Toulouse, France
+            </h4>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="2014 - 2018"
-            iconStyle={{ background: "#3e497a", color: "#fff" }}
-            icon={<FontAwesomeIcon icon={faSchool} color="#FFD43B" />}
+            date="Février 2021 – Août 2021 "
+            dateClassName="first"
+            iconStyle={{ background: "#022c43", color: "#ffd700" }}
+            icon={ < MdWork  color="#FFD700" />}
           >
             <h3 className="vertical-timeline-element-title">
-              My Cool University, Vancouver, British Columbia
+            Stage Pratique | SIDER (Complexe sidérurgique d’El Hadjar)
             </h3>
-
             <h4 className="vertical-timeline-element-subtitle">
-              Bachelor's Degree
+              Automaticien
             </h4>
-
-            <p> Computer Science</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2019 - 2021"
+            dateClassName="first"
+            iconStyle={{ background: "#022c43", color: "#ffd700" }}
+            icon={<FontAwesomeIcon icon={faGraduationCap} color="#FFD700" />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Master II Commande électrique |  Université Badji Mokthar-Annaba
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Diplome Master II
+            </h4>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2018 - 2020"
-            iconStyle={{ background: "#e9d35b", color: "#fff" }}
-            icon={<FontAwesomeIcon icon={faSchool} color="#FFD43B" />}
+            date="Mai 2019 – Jul 2019"
+            dateClassName="first"
+            iconStyle={{ background: "#022c43", color: "#ffd700" }}
+            icon={< MdWork color="#FFD700" />}
           >
             <h3 className="vertical-timeline-element-title">
-              Back End Engineer - Google
+            Stage découverte | SEAAL
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              San Francisco, CA
+              Electrotechnicien
             </h4>
-            <p>Developed the backend infrastructure for 3 projects.</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2016 - 2019"
+            dateClassName="first"
+            iconStyle={{ background: "#022c43", color: "#ffd700" }}
+            icon={<FontAwesomeIcon icon={faGraduationCap} color="#FFD700" />}
+          >
+            <h3 className="vertical-timeline-element-title">
+            Licence LMD spécialité électrotechnique | Université Badji Mokthar-Annaba
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Diplome Licence
+            </h4>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - present"
-            iconStyle={{ background: "#e9d35b", color: "#fff" }}
-            icon={<FontAwesomeIcon icon={faSchool} color="#FFD43B" />}
+            date="2016"
+            dateClassName="first"
+            iconStyle={{ background: "#022c43", color: "#ffd700" }}
+            icon={<FontAwesomeIcon icon={faGraduationCap} color="#FFD700" />}
           >
             <h3 className="vertical-timeline-element-title">
-              Full Stack Engineer - Twitch
+              BAC Scientifique | Lycée colonel Amara el Askri
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              San Francisco, CA
+            Diplome Baccalauréat
             </h4>
-            <p>
-              Helped the team launch 2 major features by working both in the front
-              end and back end.
-            </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
