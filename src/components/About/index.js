@@ -32,7 +32,7 @@ const About = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
-            date="Février 2021 – Août 2021 "
+            date="Feb 2021 – Aug 2021 "
             dateClassName="first"
             iconStyle={{ background: "#022c43", color: "#ffd700" }}
             icon={ < MdWork  color="#FFD700" />}
@@ -60,7 +60,7 @@ const About = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="Mai 2019 – Jul 2019"
+            date="May 2019 – July 2019"
             dateClassName="first"
             iconStyle={{ background: "#022c43", color: "#ffd700" }}
             icon={< MdWork color="#FFD700" />}
