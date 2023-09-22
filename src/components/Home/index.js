@@ -49,6 +49,7 @@ const Home = () => {
           <a
               className="flat-button"
               target="_blank"
+              rel="noreferrer"
               href={CV}
               >DOWNLOAD CV
           </a>
