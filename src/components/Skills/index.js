@@ -40,7 +40,8 @@ const Skills = () => {
         "ROS",
         "JENKINS",
         "SQL",
-        "TAILWIND"
+        "TAILWIND",
+        "DJANGO"
       ];
 
       const radiusValue = () => {
